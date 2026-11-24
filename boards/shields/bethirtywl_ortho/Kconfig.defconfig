@@ -1,7 +1,11 @@
 if SHIELD_BETHIRTYWL_ORTHO
 
+# Bluetooth / Studio の名前。15 文字まで: Zephyr の hci_core.c が
+# BUILD_ASSERT(名前の長さ < CONFIG_BT_DEVICE_NAME_MAX(ZMK は 16)) で止める。
+# "BeThirtyWL Ortho" は 16 文字でビルドが落ちた(v0.1.5)。USB の製品名は
+# .conf の CONFIG_USB_DEVICE_PRODUCT で "BeThirtyWL Ortho" のまま。
 config ZMK_KEYBOARD_NAME
-    default "BeThirtyWL Ortho"
+    default "Be30WL Ortho"
 
 # USB の識別子(VID/PID/製造者/製品名)はここには書かない。default は ZMK 自身の
 # 既定値に先を越されて一度も効かない。bethirtywl_ortho.conf を見ること。
