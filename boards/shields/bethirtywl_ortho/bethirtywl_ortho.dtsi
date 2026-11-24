@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "bethirtymax_ortho-layouts.dtsi"
+#include "bethirtywl_ortho-layouts.dtsi"
 
 / {
     chosen {

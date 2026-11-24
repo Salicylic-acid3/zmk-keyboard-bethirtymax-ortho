@@ -1,8 +1,8 @@
 include:
   - board: acdb
-    shield: bethirtymax_ortho
+    shield: bethirtywl_ortho
     snippet: studio-rpc-usb-uart
-    artifact-name: bethirtymax_ortho
+    artifact-name: bethirtywl_ortho
   - board: acdb
     shield: settings_reset
     artifact-name: settings_reset
